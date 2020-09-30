@@ -15,6 +15,7 @@ public class Main {
         //defines ioc container
 //        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
+        //add comments test git
         //get the bean from container
 //testcode        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 //testcode        int number = numberGenerator.next();
