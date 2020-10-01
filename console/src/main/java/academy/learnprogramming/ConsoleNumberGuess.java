@@ -1,21 +1,21 @@
 package academy.learnprogramming;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
+@Slf4j
 
 @Component
 public class ConsoleNumberGuess /*implements ApplicationListener<ContextRefreshedEvent>*/ {
-    private static final Logger logger;
+//    private static final Logger log;
 
-    static {
-        logger = LoggerFactory.getLogger(ConsoleNumberGuess.class);
-    }
+//    static {
+//        logger = LoggerFactory.getLogger(ConsoleNumberGuess.class);
+//    }
     @Autowired
     private Game game;
 
@@ -24,7 +24,7 @@ public class ConsoleNumberGuess /*implements ApplicationListener<ContextRefreshe
 
     @EventListener
     public void onRefresh(ContextRefreshedEvent contextRefreshedEvent) {
-        logger.info("Annotation - Container ready for use");
+        log.info("Annotation - Container ready for use");
         Scanner scanner = new Scanner (System.in);
         while (true){
             System.out.println(messageGenerator.getMainMessage());
@@ -47,6 +47,6 @@ public class ConsoleNumberGuess /*implements ApplicationListener<ContextRefreshe
     }
     @EventListener(ContextRefreshedEvent.class)
     public void onRefresh2() {
-        logger.info("Annotation2 - Container ready for use");
+        log.info("Annotation2 - Container ready for use");
     }
 }

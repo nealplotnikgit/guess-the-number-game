@@ -1,13 +1,12 @@
 package academy.learnprogramming;
 
 import academy.learnprogramming.config.GameConfig;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
+@Slf4j
 public class Main {
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
+//    private static final Logger log = LoggerFactory.getLogger(Main.class);
 //    private static final String CONFIG_LOCATION = "beans.xml_bkp";
 
     public static void main(String[] args){

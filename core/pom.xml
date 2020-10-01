@@ -24,7 +24,17 @@
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <!--            <scope>provided</scope> -->
+            <!--            <systemPath>${basedir}xxxxxxx/lombokxxx.jar</systemPath> -->
+            <!--            <scope>system</scope> -->
+        </dependency>
+
     </dependencies>
+
 
 
 </project>
